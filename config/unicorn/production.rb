@@ -2,8 +2,8 @@ worker_processes Integer(ENV["WEB_CONCURRENCY"] || 2)
 timeout 15
 preload_app true  # 更新時ダウンタイム無し
 
-listen "/tmp/unicorn.sock"
-pid "/tmp/unicorn.pid"
+listen File.expand_path('../../../tmp/unicorn.sock', __FILE__)
+pid File.expand_path('../../../tmp/unicorn.pid', __FILE__)
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
