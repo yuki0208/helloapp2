@@ -15,7 +15,7 @@ set :branch, 'master'
 set :deploy_to, '/home/ec2-user'
 
 # シンボリックリンクをはるファイル。(※後述)
-set :linked_files, fetch(:linked_files, []).push('config/settings.yml')
+#set :linked_files, fetch(:linked_files, []).push('')
 
 # シンボリックリンクをはるフォルダ。(※後述)
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
