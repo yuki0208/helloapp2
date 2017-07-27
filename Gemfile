@@ -43,7 +43,6 @@ end
 
 group :production, :staging do
   gem 'unicorn'
-  gem 'capistrano3-unicorn'
 end
 
 group :development do
@@ -57,7 +56,6 @@ end
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
 gem 'capistrano-rbenv'
-gem 'capistrano-bundler'
 gem 'capistrano3-unicorn'
 gem 'capistrano'
 
